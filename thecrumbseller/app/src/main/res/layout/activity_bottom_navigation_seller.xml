@@ -15,28 +15,6 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true">
 
-        <LinearLayout
-            android:layout_gravity="bottom"
-            android:layout_margin="20dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="right"
-            android:padding="10dp"
-            android:orientation="vertical">
-
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/btm_add_items"
-                android:layout_width="wrap_content"
-                android:background="#FFC107"
-                android:padding="10dp"
-                android:src="@drawable/ic_baseline_add_24"
-                android:layout_above="@+id/bottomNavigationView"
-                android:layout_below="@+id/page_container"
-                android:layout_height="wrap_content">
-
-            </com.google.android.material.floatingactionbutton.FloatingActionButton>
-
-        </LinearLayout>
 
 
     </FrameLayout>

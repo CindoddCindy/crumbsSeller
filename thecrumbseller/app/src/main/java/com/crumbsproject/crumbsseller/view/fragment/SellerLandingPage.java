@@ -1,5 +1,6 @@
 package com.crumbsproject.crumbsseller.view.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -9,6 +10,9 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.crumbsproject.crumbsseller.R;
+import com.crumbsproject.crumbsseller.view.BottomNavigationSeller;
+import com.crumbsproject.crumbsseller.view.SellerAddItem;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -25,6 +29,9 @@ public class SellerLandingPage extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+
+    private FloatingActionButton floatingActionButton_add_item;
+
 
     public SellerLandingPage() {
         // Required empty public constructor
@@ -61,6 +68,20 @@ public class SellerLandingPage extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_seller_landing_page, container, false);
+        View view = inflater.inflate(R.layout.fragment_seller_landing_page, container, false);
+
+        floatingActionButton_add_item=view.findViewById(R.id.btm_add_items);
+
+        floatingActionButton_add_item.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), SellerAddItem.class);
+                startActivity(intent);
+
+            }
+        });
+
+
+        return view;
     }
 }

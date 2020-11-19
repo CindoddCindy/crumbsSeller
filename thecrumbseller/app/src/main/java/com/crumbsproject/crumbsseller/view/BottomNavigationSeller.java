@@ -18,23 +18,12 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class BottomNavigationSeller extends AppCompatActivity {
 
-    private FloatingActionButton floatingActionButton_add_item;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bottom_navigation_seller);
 
-        floatingActionButton_add_item=findViewById(R.id.btm_add_items);
-
-        floatingActionButton_add_item.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(BottomNavigationSeller.this,SellerAddItem.class);
-                startActivity(intent);
-                finish();
-            }
-        });
 
 
 
