@@ -21,6 +21,8 @@
         </ImageView>
 
         <TextView
+            android:drawableLeft="@drawable/ic_baseline_person_24"
+            android:drawablePadding="10dp"
             android:layout_margin="10dp"
             android:padding="5dp"
             android:gravity="left"
@@ -34,6 +36,8 @@
         </TextView>
 
         <TextView
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/ic_baseline_smartphone_24"
             android:layout_margin="10dp"
             android:padding="5dp"
             android:gravity="left"
@@ -44,7 +48,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-        </TextView> <TextView
+        </TextView>
+
+        <TextView
+            android:drawableLeft="@drawable/ic_baseline_location_on_24"
+            android:drawablePadding="10dp"
         android:layout_margin="10dp"
         android:padding="5dp"
         android:gravity="left"
@@ -58,6 +66,8 @@
     </TextView>
 
         <TextView
+            android:drawableLeft="@drawable/ic_baseline_attach_money_24"
+            android:drawablePadding="10dp"
             android:layout_margin="10dp"
             android:padding="5dp"
             android:gravity="left"
@@ -71,6 +81,8 @@
         </TextView>
 
         <TextView
+            android:drawableLeft="@drawable/ic_baseline_edit_24"
+            android:drawablePadding="10dp"
             android:layout_margin="10dp"
             android:padding="5dp"
             android:gravity="left"
