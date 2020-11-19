@@ -4,23 +4,43 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 
 import com.crumbsproject.crumbsseller.R;
 import com.crumbsproject.crumbsseller.view.fragment.SellerHistory;
 import com.crumbsproject.crumbsseller.view.fragment.SellerLandingPage;
 import com.crumbsproject.crumbsseller.view.fragment.SellerProfile;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class BottomNavigationSeller extends AppCompatActivity {
+
+    private FloatingActionButton floatingActionButton_add_item;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bottom_navigation_seller);
 
+        floatingActionButton_add_item=findViewById(R.id.btm_add_items);
+
+        floatingActionButton_add_item.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(BottomNavigationSeller.this,SellerAddItem.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+
+
         getFragmentPage(new SellerLandingPage());
+
+
 
 
         BottomNavigationView bottomNavigation = findViewById(R.id.bottomNavigationView);
