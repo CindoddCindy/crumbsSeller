@@ -19,7 +19,8 @@ public class SellerAddItem extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_seller_add_item);
 
-        button_add_my_item=findViewById(R.id.btm_add_items);
+        button_add_my_item=findViewById(R.id.btn_add_item);
+
         button_add_my_item.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
